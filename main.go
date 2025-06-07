@@ -8,8 +8,8 @@ import (
 
 func main() {
 	cmd := exec.Command("ffuf",
-		"-u", "https://example.com/FUZZ",
-		"-w", "wordlist.txt",
+		"-u", "http://testphp.vulnweb.com/FUZZ",
+		"-w", "SecLists/Discovery/Web-Content/common.txt",
 		"-mc", "200",
 	)
 
